@@ -1,13 +1,8 @@
 node_modules/
-
-# build output
+build/
 dist/
-
-# local env files
-.env
-.env.local
-
-# misc
+coverage/
 .DS_Store
-.vscode/
-.vercel/
+*.log
+.env*
+!.env.example
