@@ -15,7 +15,7 @@ export default function ProjectsUniverse() {
           className="mb-16 text-right"
         >
           <h2 className="text-2xl md:text-3xl font-display text-white mb-4 flex items-center justify-end gap-4 uppercase">
-            Projects Universe <span className="text-cyan-400">.03</span>
+            Project's <span className="text-cyan-400">Universe</span>
           </h2>
           <div className="h-1 w-32 bg-cyan-500 ml-auto" />
         </motion.div>

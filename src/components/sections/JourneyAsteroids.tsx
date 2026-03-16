@@ -40,7 +40,7 @@ export default function JourneyAsteroids() {
           className="text-center mb-16"
         >
           <h2 className="text-2xl md:text-3xl font-display text-white mb-4 uppercase">
-            <span className="text-cyan-400">04.</span> Asteroid Timeline
+            <span className="text-cyan-400">Asteroid</span> Timeline
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto font-mono text-lg uppercase">
             Navigating through the milestones of my developer journey.

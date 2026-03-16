@@ -16,7 +16,7 @@ export default function SkillsGalaxy() {
           className="text-center mb-20"
         >
           <h2 className="text-2xl md:text-3xl font-display text-white mb-4 uppercase">
-            <span className="text-cyan-400">02.</span> Skills Galaxy
+            <span className="text-cyan-400">Skills</span> Galaxy
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto font-mono text-sm md:text-lg uppercase">
             A constellation of technologies I've mastered over the years.

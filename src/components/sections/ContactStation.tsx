@@ -63,7 +63,7 @@ export default function ContactStation() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-2xl md:text-3xl font-display text-white mb-4 md:mb-6 uppercase">
-            <span className="text-cyan-400">05.</span> Space Station
+            <span className="text-cyan-400"> Space</span> Station
           </h2>
           <p className="text-sm md:text-lg text-slate-300 mb-8 md:mb-12 font-mono uppercase">
             Let's build something amazing together.

@@ -32,7 +32,7 @@ export default function AboutPlanet() {
             className="mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-display text-white mb-4 flex items-center gap-4 uppercase">
-              <span className="text-cyan-400">01.</span> Origin Planet
+              <span className="text-cyan-400">Origin</span> Planet
             </h2>
             <div className="h-1 w-32 bg-cyan-500" />
           </motion.div>
