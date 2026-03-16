@@ -23,11 +23,11 @@ export default function NebulaLayer() {
       {/* Mid Space Blocks */}
       <motion.div 
         style={{ y: y2 }} 
-        className="absolute top-[40%] right-[-10%] w-[300px] h-[300px] bg-indigo-900/30 mix-blend-screen" 
+        className="absolute top-[40%] right-[-10%] w-[300px] h-[300px] bg-cyan-900/30 mix-blend-screen" 
       />
       <motion.div 
         style={{ y: y2 }} 
-        className="absolute top-[35%] right-[5%] w-[150px] h-[150px] bg-indigo-800/20 mix-blend-screen" 
+        className="absolute top-[35%] right-[5%] w-[150px] h-[150px] bg-cyan-800/20 mix-blend-screen" 
       />
       
       {/* Foreground Space Blocks */}

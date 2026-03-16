@@ -19,7 +19,7 @@ export default function AboutPlanet() {
         }}
         viewport={{ once: true, margin: "-200px" }}
         transition={{ duration: 2, ease: "linear" }}
-        className="absolute right-[-10%] top-[20%] w-[400px] h-[400px] bg-indigo-900 pointer-events-none opacity-50 pixel-border"
+        className="absolute right-[-10%] top-[20%] w-[400px] h-[400px] bg-cyan-900 pointer-events-none opacity-50 pixel-border"
       />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -32,9 +32,9 @@ export default function AboutPlanet() {
             className="mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-display text-white mb-4 flex items-center gap-4 uppercase">
-              <span className="text-indigo-400">01.</span> Origin Planet
+              <span className="text-cyan-400">01.</span> Origin Planet
             </h2>
-            <div className="h-1 w-32 bg-indigo-500" />
+            <div className="h-1 w-32 bg-cyan-500" />
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -44,7 +44,7 @@ export default function AboutPlanet() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="bg-black pixel-border p-6 md:p-8 hover:bg-indigo-950 pixel-shadow-hover transition-none"
+                className="bg-black pixel-border p-6 md:p-8 hover:bg-cyan-950 pixel-shadow-hover transition-none"
               >
                 <p className="text-slate-300 leading-relaxed mb-6 font-mono text-sm md:text-base">
                   Hello! I'm Abhishek Aditya Jeremy, a Software Developer and BCA student at Arcade Business College, Rajendra Nagar (2023-present). My journey into software development started with a deep curiosity about how systems are architected and scaled.
@@ -67,9 +67,9 @@ export default function AboutPlanet() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.5, delay: 0.4 + i * 0.1 }}
-                    className="flex items-start gap-4 p-4 bg-black pixel-border hover:bg-indigo-900 pixel-shadow-hover transition-none cursor-default"
+                    className="flex items-start gap-4 p-4 bg-black pixel-border hover:bg-cyan-900 pixel-shadow-hover transition-none cursor-default"
                   >
-                    <div className="p-3 bg-indigo-500 text-white border-2 border-white shrink-0">
+                    <div className="p-3 bg-cyan-500 text-white border-2 border-white shrink-0">
                       <item.icon className="w-5 h-5 md:w-6 md:h-6" />
                     </div>
                     <div>

@@ -49,15 +49,16 @@ DESTINATION_EMAIL="your-email@example.com"
 ```
 
 ### 3. Start Development
-Run the frontend and backend simultaneously:
+The easiest local setup is a single Vite server. It now serves both the frontend and the `/api/transmit` route:
 ```bash
-# In one terminal (Vite Frontend)
 npm run dev
+```
 
-# In another terminal (AI API via Vercel Dev or TSX)
+If you want the API on a separate port for local debugging, run the standalone server too:
+```bash
 npm run server
 ```
-*Note: For the best local experience, use `npx vercel dev` if you have the Vercel CLI installed.*
+This standalone API listens on `http://localhost:3001/api/transmit`.
 
 ## 🛰️ Deployment (Vercel)
 

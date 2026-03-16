@@ -166,10 +166,10 @@ export default function HyperspaceLoader({ onComplete }: { onComplete: () => voi
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
             transition={{ duration: 4.5, ease: "linear" }}
-            className="h-full bg-indigo-500"
+            className="h-full bg-cyan-500"
           />
         </div>
-        <p className="text-indigo-400 font-display text-sm md:text-base tracking-widest uppercase animate-pulse text-center px-4">
+        <p className="text-cyan-400 font-display text-sm md:text-base tracking-widest uppercase animate-pulse text-center px-4">
           {text}
         </p>
       </div>

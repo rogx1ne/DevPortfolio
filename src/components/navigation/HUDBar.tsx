@@ -92,21 +92,21 @@ export default function HUDBar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 h-16 bg-black border-b-4 border-indigo-500 z-50 flex items-center justify-between px-4 md:px-6 font-mono text-xs md:text-sm"
+      className="fixed top-0 left-0 right-0 h-16 bg-black border-b-4 border-cyan-500 z-50 flex items-center justify-between px-4 md:px-6 font-mono text-xs md:text-sm"
     >
       <div className="flex items-center gap-4 md:gap-6">
-        <span className="text-indigo-400 font-display text-xs md:text-sm flex items-center gap-2">
+        <span className="text-cyan-400 font-display text-xs md:text-sm flex items-center gap-2">
           A²J
         </span>
         <nav className="hidden md:flex items-center gap-4 text-slate-400 uppercase">
-          <span className="text-indigo-500">|</span>
+          <span className="text-cyan-500">|</span>
           {['launch', 'about', 'skills', 'projects', 'journey', 'contact'].map((id) => (
             <a 
               key={id}
               href={`#${id}`} 
               onMouseEnter={playHover}
               onClick={playBlip}
-              className={`px-2 py-1 transition-none ${activeSection === id ? 'text-white bg-indigo-500 pixel-shadow' : 'hover:text-white hover:bg-indigo-500/50'}`}
+              className={`px-2 py-1 transition-none ${activeSection === id ? 'text-white bg-cyan-500 pixel-shadow' : 'hover:text-white hover:bg-cyan-500/50'}`}
             >
               {id}
             </a>
@@ -120,11 +120,11 @@ export default function HUDBar() {
           <span>STATUS: {isAutopilot ? 'AUTO' : 'MANUAL'}</span>
         </div>
         
-        <div className="flex items-center gap-2 border-r-2 border-indigo-500/30 pr-4">
+        <div className="flex items-center gap-2 border-r-2 border-cyan-500/30 pr-4">
           <button 
             onClick={() => { setAudioEnabled(!audioEnabled); playBlip(); }}
             onMouseEnter={playHover}
-            className={`p-1.5 transition-colors ${audioEnabled ? 'text-indigo-400' : 'text-slate-500 hover:text-indigo-400'}`}
+            className={`p-1.5 transition-colors ${audioEnabled ? 'text-cyan-400' : 'text-slate-500 hover:text-cyan-400'}`}
             title={audioEnabled ? "Mute Audio" : "Enable Audio"}
           >
             {audioEnabled ? <Volume2 className="w-4 h-4 md:w-5 md:h-5" /> : <VolumeX className="w-4 h-4 md:w-5 md:h-5" />}
@@ -132,7 +132,7 @@ export default function HUDBar() {
           <button 
             onClick={() => { setLiteMode(!liteMode); playBlip(); }}
             onMouseEnter={playHover}
-            className={`p-1.5 transition-colors ${liteMode ? 'text-amber-400' : 'text-slate-500 hover:text-indigo-400'}`}
+            className={`p-1.5 transition-colors ${liteMode ? 'text-amber-400' : 'text-slate-500 hover:text-cyan-400'}`}
             title={liteMode ? "Disable Lite Mode" : "Enable Lite Mode"}
           >
             {liteMode ? <ZapOff className="w-4 h-4 md:w-5 md:h-5" /> : <Zap className="w-4 h-4 md:w-5 md:h-5" />}
@@ -144,8 +144,8 @@ export default function HUDBar() {
           onMouseEnter={playHover}
           className={`flex items-center gap-2 px-3 py-1.5 border-2 transition-none uppercase tracking-wider text-[10px] md:text-xs group ${
             isAutopilot 
-              ? 'bg-indigo-500 text-white border-indigo-500 pixel-shadow' 
-              : 'bg-black hover:bg-indigo-500 hover:text-white text-slate-300 border-indigo-500'
+              ? 'bg-cyan-500 text-white border-cyan-500 pixel-shadow' 
+              : 'bg-black hover:bg-cyan-500 hover:text-white text-slate-300 border-cyan-500'
           }`}
         >
           {isAutopilot ? (
@@ -164,7 +164,7 @@ export default function HUDBar() {
         <button
           onClick={handleSkip}
           onMouseEnter={playHover}
-          className="flex items-center gap-2 bg-black hover:bg-indigo-500 hover:text-white text-slate-300 px-3 py-1.5 border-2 border-indigo-500 transition-none uppercase tracking-wider text-[10px] md:text-xs group"
+          className="flex items-center gap-2 bg-black hover:bg-cyan-500 hover:text-white text-slate-300 px-3 py-1.5 border-2 border-cyan-500 transition-none uppercase tracking-wider text-[10px] md:text-xs group"
         >
           <span className="hidden sm:inline">SKIP</span>
           <FastForward className="w-3 h-3" />

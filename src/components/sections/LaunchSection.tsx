@@ -38,20 +38,20 @@ export default function LaunchSection() {
       {/* Grid background */}
       <motion.div 
         style={{ x: bgX, y: bgY }}
-        className="absolute inset-[-50px] bg-[linear-gradient(to_right,#4f46e5_1px,transparent_1px),linear-gradient(to_bottom,#4f46e5_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 z-0" 
+        className="absolute inset-[-50px] bg-[linear-gradient(to_right,#06b6d4_1px,transparent_1px),linear-gradient(to_bottom,#06b6d4_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 z-0" 
       />
 
       {/* Pixel Moon Background */}
       <div className="absolute top-[10%] right-[5%] md:top-[15%] md:right-[15%] z-0 opacity-90 pointer-events-none">
         <motion.div style={{ x: moonX, y: moonY }}>
-          <PixelMoon className="w-[128px] h-[128px] md:w-[192px] md:h-[192px] drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]" />
+          <PixelMoon className="w-[128px] h-[128px] md:w-[192px] md:h-[192px]" />
         </motion.div>
       </div>
 
       {/* Pixel Planet Background */}
       <div className="absolute top-1/2 left-1/2 z-0 opacity-40 md:opacity-60 pointer-events-none -translate-x-1/2 -translate-y-1/2">
         <motion.div style={{ x: planetX, y: planetY }}>
-          <PixelPlanet className="w-[256px] h-[256px] md:w-[384px] md:h-[384px] scale-[3] drop-shadow-[0_0_30px_rgba(59,130,246,0.5)]" />
+          <PixelPlanet className="w-[256px] h-[256px] md:w-[384px] md:h-[384px] scale-[3]" />
         </motion.div>
       </div>
 
@@ -59,9 +59,6 @@ export default function LaunchSection() {
         style={{ y, opacity }}
         className="z-10 text-center px-4 relative"
       >
-        {/* Contrast Backdrop to ensure text is readable over the bright planet */}
-        <div className="absolute inset-[-4rem] bg-black/60 blur-2xl -z-10 rounded-full" />
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -81,18 +78,6 @@ export default function LaunchSection() {
               <path d="M 25 80 C 25 95 40 95 45 92" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
               <rect x="45" y="86" width="10" height="12" rx="2" />
             </svg>
-            <motion.div
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.3, 0.6, 0.3],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="absolute inset-0 bg-indigo-500 blur-xl rounded-full z-0"
-            />
           </div>
         </motion.div>
         
@@ -102,7 +87,7 @@ export default function LaunchSection() {
           transition={{ duration: 1, delay: 0.4 }}
           className="text-4xl md:text-6xl lg:text-8xl font-display text-white mb-6 uppercase"
         >
-          Yo!
+          Yo! 
           It's Abhishek
         </motion.h1>
         
@@ -110,7 +95,7 @@ export default function LaunchSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="text-base md:text-xl lg:text-2xl text-indigo-400 font-mono mb-8 uppercase"
+          className="text-base md:text-xl lg:text-2xl text-cyan-400 font-mono mb-8 uppercase"
         >
           Just a fun Programmer \/
         </motion.h2>
@@ -131,11 +116,11 @@ export default function LaunchSection() {
         transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10"
       >
-        <span className="text-xs text-indigo-500 font-display uppercase tracking-widest animate-pulse">PRESS START</span>
+        <span className="text-xs text-cyan-500 font-display uppercase tracking-widest animate-pulse">PRESS START</span>
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-          className="w-1 h-12 bg-indigo-500"
+          className="w-1 h-12 bg-cyan-500"
         />
       </motion.div>
     </section>

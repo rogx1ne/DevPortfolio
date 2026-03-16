@@ -27,23 +27,17 @@ export const journey = [
   {
     year: '2023-present',
     title: 'BCA Journey Begins',
-    description: 'Started Bachelor of Computer Applications at Arcade Business College, Rajendra Nagar.',
+    description: 'Started Bachelor of Computer Applications at Arcade Business College, Rajendra Nagar, and focused on core Computer Science concepts',
   },
   {
-    year: '2024',
+    year: 'November 2025',
     title: 'Web Development',
     description: 'Developed JournaLOG, a privacy-focused offline-first serverless journaling application using React and TypeScript.',
   },
   {
-    year: '2025',
+    year: 'January 2026',
     title: 'Desktop Applications',
     description: 'Engineered a robust Library Management System using Java Swing, MVC/DAO pattern, and Oracle 11g.',
-  },
-  
-  {
-    year: '2025',
-    title: 'Internship & AI Certifications',
-    description: 'Completed an internship gaining valuable industry experience and earned Artificial Intelligence certifications.',
   },
   {
     year: 'Present',

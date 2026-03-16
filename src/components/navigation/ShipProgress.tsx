@@ -65,7 +65,7 @@ export default function ShipProgress() {
       
       {/* Progress Line */}
       <motion.div
-        className="absolute top-0 w-1 bg-indigo-500 origin-top"
+        className="absolute top-0 w-1 bg-cyan-500 origin-top"
         style={{ scaleY, height: '100%' }}
       />
 
@@ -85,8 +85,8 @@ export default function ShipProgress() {
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <div className={`w-2 h-2 border transition-none z-10 ${isActive ? 'bg-indigo-400 border-indigo-300 shadow-[0_0_10px_rgba(129,140,248,0.8)]' : 'bg-slate-700 border-slate-600 group-hover:bg-indigo-400 group-hover:border-indigo-300'}`} />
-              <span className={`absolute left-6 text-[10px] md:text-xs font-mono transition-none whitespace-nowrap uppercase ${isActive ? 'text-indigo-400 opacity-100' : 'text-slate-500 opacity-0 group-hover:opacity-100'}`}>
+              <div className={`w-2 h-2 border transition-none z-10 ${isActive ? 'bg-cyan-400 border-cyan-300 shadow-[0_0_10px_rgba(129,140,248,0.8)]' : 'bg-slate-700 border-slate-600 group-hover:bg-cyan-400 group-hover:border-cyan-300'}`} />
+              <span className={`absolute left-6 text-[10px] md:text-xs font-mono transition-none whitespace-nowrap uppercase ${isActive ? 'text-cyan-400 opacity-100' : 'text-slate-500 opacity-0 group-hover:opacity-100'}`}>
                 {label}
               </span>
             </div>
@@ -96,7 +96,7 @@ export default function ShipProgress() {
 
       {/* Ship */}
       <motion.div
-        className="absolute w-8 h-8 -ml-3.5 flex items-center justify-center text-white bg-black border-2 border-indigo-500 pixel-shadow"
+        className="absolute w-8 h-8 -ml-3.5 flex items-center justify-center text-white bg-black border-2 border-cyan-500 pixel-shadow"
         style={{ top: topPosition, y: '-50%' }}
       >
         <Rocket className="w-4 h-4 -rotate-90" />

@@ -8,12 +8,12 @@ export default function GalaxyMap() {
   const { playHover, playBlip } = useSettings();
 
   const locations = [
-    { id: 'launch', name: 'Launch Pad', x: '50%', y: '80%', color: 'bg-orange-500' },
-    { id: 'about', name: 'Planet Origin', x: '30%', y: '60%', color: 'bg-blue-500' },
-    { id: 'skills', name: 'Skills Galaxy', x: '70%', y: '40%', color: 'bg-purple-500' },
-    { id: 'projects', name: 'Projects Universe', x: '20%', y: '20%', color: 'bg-emerald-500' },
-    { id: 'journey', name: 'Asteroid Belt', x: '80%', y: '60%', color: 'bg-slate-400' },
-    { id: 'contact', name: 'Space Station', x: '50%', y: '10%', color: 'bg-red-500' },
+    { id: 'launch', name: 'Launch Pad', x: '50%', y: '75%', color: 'bg-orange-500' },
+    { id: 'about', name: 'Planet Origin', x: '35%', y: '55%', color: 'bg-blue-500' },
+    { id: 'skills', name: 'Skills Galaxy', x: '65%', y: '40%', color: 'bg-purple-500' },
+    { id: 'projects', name: 'Projects Universe', x: '30%', y: '25%', color: 'bg-emerald-500' },
+    { id: 'journey', name: 'Asteroid Belt', x: '70%', y: '60%', color: 'bg-slate-400' },
+    { id: 'contact', name: 'Space Station', x: '50%', y: '15%', color: 'bg-red-500' },
   ];
 
   const handleNavigate = (id: string) => {
@@ -30,7 +30,7 @@ export default function GalaxyMap() {
       <button
         onClick={() => { playBlip(); setIsOpen(true); }}
         onMouseEnter={playHover}
-        className="fixed top-24 right-6 z-50 p-3 bg-black border-4 border-indigo-500 text-white hover:bg-indigo-500 transition-none group pixel-shadow"
+        className="fixed bottom-10 right-10 z-50 p-3 bg-black border-4 border-cyan-500 text-white hover:bg-cyan-500 transition-none group pixel-shadow"
       >
         <Map className="w-6 h-6" />
       </button>
@@ -51,11 +51,11 @@ export default function GalaxyMap() {
               <X className="w-8 h-8" />
             </button>
 
-            <div className="relative w-[90vw] h-[75vh] md:w-full md:max-w-4xl md:h-auto md:aspect-video border-4 border-indigo-500 bg-black pixel-shadow overflow-hidden">
+            <div className="relative w-[85vw] h-[60vh] md:w-full md:max-w-2xl md:aspect-square border-4 border-cyan-500 bg-black pixel-shadow overflow-hidden">
               {/* Grid lines */}
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e5_1px,transparent_1px),linear-gradient(to_bottom,#4f46e5_1px,transparent_1px)] bg-[size:20px_20px] md:bg-[size:40px_40px] opacity-20" />
+              <div className="absolute inset-0 bg-[linear-gradient(to_right,#06b6d4_1px,transparent_1px),linear-gradient(to_bottom,#06b6d4_1px,transparent_1px)] bg-[size:20px_20px] md:bg-[size:30px_30px] opacity-20" />
               
-              <div className="absolute top-4 left-4 md:top-6 md:left-6 font-display text-indigo-400 text-[10px] md:text-xs tracking-widest uppercase">
+              <div className="absolute top-4 left-4 md:top-6 md:left-6 font-display text-cyan-400 text-[10px] md:text-xs tracking-widest uppercase">
                 GALAXY MAP
               </div>
 

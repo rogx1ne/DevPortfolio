@@ -9,14 +9,14 @@
 
 @layer utilities {
   .pixel-shadow {
-    box-shadow: 4px 4px 0px rgba(79, 70, 229, 1);
+    box-shadow: 4px 4px 0px rgba(6, 182, 212, 1);
   }
   .pixel-shadow-hover:hover {
-    box-shadow: 6px 6px 0px rgba(79, 70, 229, 1);
+    box-shadow: 6px 6px 0px rgba(6, 182, 212, 1);
     transform: translate(-2px, -2px);
   }
   .pixel-border {
-    border: 4px solid #4f46e5;
+    border: 4px solid #06b6d4;
     border-radius: 0;
   }
   .pixel-border-white {

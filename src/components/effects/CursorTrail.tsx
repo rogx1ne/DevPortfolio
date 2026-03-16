@@ -35,7 +35,7 @@ export default function CursorTrail() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 w-6 h-6 border-2 border-indigo-400 pointer-events-none z-[9999]"
+        className="fixed top-0 left-0 w-6 h-6 border-2 border-cyan-400 pointer-events-none z-[9999]"
         animate={{
           x: mousePosition.x - 12,
           y: mousePosition.y - 12,

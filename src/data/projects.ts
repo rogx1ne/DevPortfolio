@@ -6,7 +6,7 @@ export const projects = [
     tech: ['Java', 'Java Swing', 'Oracle 11g', 'JDBC'],
     github: 'https://github.com/rogx1ne/LMS',
     demo: 'https://github.com/rogx1ne/LMS',
-    color: 'from-purple-500 to-indigo-500',
+    color: 'from-purple-500 to-cyan-500',
   },
   {
     id: 'project-2',

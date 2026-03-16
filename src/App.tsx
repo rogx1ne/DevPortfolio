@@ -50,7 +50,7 @@ function AppContent() {
   }, [liteMode]);
 
   return (
-    <div className="bg-black text-slate-50 font-sans selection:bg-indigo-500/30">
+    <div className="bg-black text-slate-50 font-sans selection:bg-cyan-500/30">
       <AnimatePresence>
         {!isReady && (
           <HyperspaceLoader key="loader" onComplete={() => setIsReady(true)} />
