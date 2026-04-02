@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Mail, Github, Linkedin, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Github, Linkedin, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function ContactStation() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -205,6 +206,14 @@ export default function ContactStation() {
                   className="text-slate-400 hover:text-cyan-400 transition-none p-2 border-2 border-transparent hover:border-cyan-400 bg-black"
                 >
                   <Linkedin className="w-5 h-5 md:w-6 md:h-6" />
+                </a>
+                <a
+                  href="https://x.com/abh1ad1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-slate-400 hover:text-cyan-400 transition-none p-2 border-2 border-transparent hover:border-cyan-400 bg-black"
+                >
+                  <FaXTwitter className="w-5 h-5 md:w-6 md:h-6" />
                 </a>
               </div>
               <p className="text-slate-500 text-[10px] md:text-sm font-mono uppercase text-center md:text-left">
